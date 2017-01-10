@@ -17,7 +17,7 @@ class ROMFinder(object):
 
   def rom_for_path(self, console, path):
     return model.ROM(
-      name    = self.parser.parse(path),
+      name    = self.parser.parse(path, console),
       path    = path,
       console = console
     )

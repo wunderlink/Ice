@@ -38,6 +38,7 @@ class ConsoleGridProvider(grid_image_provider.GridImageProvider):
     ConsoleGrid.com
     """
     try:
+      print "Image URL: %s" % self.consolegrid_top_picture_url(rom)
       response = urllib2.urlopen(self.consolegrid_top_picture_url(rom))
       if response.getcode() == 204:
         name = rom.name

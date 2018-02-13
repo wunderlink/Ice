@@ -2,6 +2,7 @@
 
 import sys
 import traceback
+import cli
 
 try:
   from cli import CommandLineRunner

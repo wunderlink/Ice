@@ -52,12 +52,12 @@
 # images directory=C:\Games\Super Nintendo\Images
 #
 [Nintendo Entertainment System]
-nickname=nes
-emulator=retroarch-nes
+nickname=NES
+emulator=
 
 [Super Nintendo]
-nickname=snes
-emulator=retroarch-snes
+nickname=SNES
+emulator=
 
 [Nintendo 64]
 nickname=N64
@@ -79,25 +79,9 @@ emulator=
 nickname=PS2
 emulator=
 
-[TurboGrafx-16]
-nickname=turbografx16
-emulator=retroarch-turbografx16
-
-[Atari 2600]
-nickname=atari2600
-emulator=retroarch-atari2600
-
-[Arcade]
-nickname=arcade
-emulator=mame
-
 [Sega Genesis]
-nickname=genesis
-emulator=retroarch-genesis
-
-[Sega Master System]
-nickname=mastersystem
-emulator=retroarch-mastersystem
+nickname=Genesis
+emulator=
 
 [Sega Dreamcast]
 nickname=Dreamcast
@@ -108,8 +92,8 @@ nickname=Gameboy
 emulator=
 
 [Gameboy Advance]
-nickname=gba
-emulator=retroarch-gba
+nickname=GBA
+emulator=
 
 [Nintendo DS]
 nickname=DS

@@ -30,35 +30,3 @@
 # [SNES9X-GTK]
 # location=/usr/bin/snes9x-gtk
 # command=%l %r
-
-[mame]
-location=C:\Emulators\mame\mame.exe
-command=%l %r
-
-[retroarch-nes]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\nestopia_libretro.dll %r
-
-[retroarch-snes]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\bsnes_balanced_libretro.dll %r
-
-[retroarch-mastersystem]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\picodrive_libretro.dll %r
-
-[retroarch-genesis]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\picodrive_libretro.dll %r
-
-[retroarch-atari2600]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\stella_libretro.dll %r
-
-[retroarch-turbografx16]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\mednafen_supergrafx_libretro.dll %r
-
-[retroarch-gba]
-location=C:\Emulators\retroarch\retroarch.exe
-command=%l -L C:\Emulators\retroarch\cores\gpsp_libretro.dll %r

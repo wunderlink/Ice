@@ -42,10 +42,8 @@ class ROMFinder(object):
     @param console - A console object
     @returns A list of ROM objects representing all of the valid ROMs for a
              given console.
-
     Valid ROMs are defined as ROMs for which the function `path_is_rom` returns
     True when given the console.
-
     Returns an empty list if `console` is not enabled
     """
     roms_directory = consoles.console_roms_directory(config, console)
@@ -56,7 +54,6 @@ class ROMFinder(object):
     """
     @param consoles - An iterable list of consoles
     @returns A list of all of the ROMs for all of the consoles in `consoles`
-
     Equivalent to calling `roms_for_console` on every element of `consoles`
     and combining the results
     """

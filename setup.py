@@ -7,6 +7,11 @@ from distutils.sysconfig import get_python_lib
 from pip.req import parse_requirements
 from setuptools import setup, find_packages
 
+import pprint
+sys.path.insert(0, "c:\Users\Tyler\Sites\Ice\ice")
+#sys.path.insert(0, "c:\Python27\Lib\site-packages\psutil")
+#sys.path.insert(0, "c:\Python27\Lib\site-packages\Ice\ice")
+
 def is_windows(platform):
   return platform.startswith('win')
 
@@ -24,9 +29,13 @@ WINDOWS_SPECIFIC_OPTIONS = dict(
   options = dict(
     py2exe = {
       # TODO: Can we generate this list automatically from requirements.txt?
+      "bundle_files": 3,
       "includes": [
         "appdirs",
         "psutil",
+#        "pyodbc",
+#        "datetime",
+#        "decimal",
       ],
     }
   ),
@@ -56,6 +65,7 @@ DATA_FILES = [
   'config.txt',
   'consoles.txt',
   'emulators.txt',
+  'MAME.xml',
 ]
 
 EXCLUDE_FROM_PACKAGES = [
@@ -112,3 +122,5 @@ setup(
 
   **extra_options(sys.platform)
 )
+
+pprint.pprint(sys.path)
